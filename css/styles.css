@@ -9,6 +9,8 @@
     --bluee: #233ed9;
     --blackk: #0d0d0d;
     --whitee: #f2f2f2;
+    --gray: #b4bfff;
+    --shadow: rgba(0, 0, 0, 0.2)
 }
 
 body{
@@ -71,7 +73,7 @@ nav ul.nav-links li a {
   align-items: center;
   gap: 2rem; 
   padding: 2.5rem;
-  margin-bottom: -30px;
+  margin-top: -10px;
 }
 
 .card-main {
@@ -89,7 +91,7 @@ nav ul.nav-links li a {
 }
 
 .main p{
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 22px;
 }
 
@@ -103,7 +105,10 @@ nav ul.nav-links li a {
     cursor: pointer;
     margin-right: 20px;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 0 transparent;
+    transform: scale(1);
 }
 
 .btn-main .btn-fala{
@@ -111,9 +116,25 @@ nav ul.nav-links li a {
     color: var(--whitee);
 }
 
+.btn-main .btn-fala:hover {
+    background-color: var(--whitee);
+    color: var(--bluee);
+    box-shadow: 0 6px 18px var(--shadow);
+    transform: scale(1.05);
+}
+
 .btn-main .btn-service{
+    background-color: transparent;
     color: var(--bluee);
 }
+
+.btn-main .btn-service:hover {
+    background-color: var(--bluee);
+    color: var(--whitee);
+    box-shadow: 0 6px 18px var(--shadow);
+    transform: scale(1.05);
+}
+
 
 .img-credit {
   flex: 1;
@@ -127,7 +148,50 @@ nav ul.nav-links li a {
 }
 
 
+/*serviços*/
 
+.our-service{
+    margin-top: 80px;
+    padding: 40px 30px;
+}
+
+.our-service .txt-title{
+    text-align: center;
+    color: var(--bluee);
+    font-size: 3.5rem;
+}
+
+.our-service .cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.our-service .card-service{
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--bluee);
+    height: auto;
+    border-radius: 16px;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 0 transparent;
+    transform: scale(1);
+    color: var(--whitee);
+    cursor: pointer;
+}
+
+.our-service .card-service:hover{
+    box-shadow: 0 6px 18px var(--shadow);
+    transform: scale(1.05);
+}
+
+.card-service h4{
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    font-weight: bold;
+}
 
 
 

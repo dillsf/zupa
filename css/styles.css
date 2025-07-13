@@ -162,8 +162,10 @@ nav ul.nav-links li a {
 }
 
 .our-service .cards{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
     flex-wrap: wrap;
     margin-top: 20px;
 }

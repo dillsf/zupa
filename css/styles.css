@@ -187,6 +187,8 @@ nav ul.nav-links li a {
 .our-service .card-service:hover{
     box-shadow: 0 6px 18px var(--shadow);
     transform: scale(1.05);
+    background-color: var(--whitee);
+    color: var(--bluee)
 }
 
 .card-service h4{

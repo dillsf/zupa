@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif;
+}
+
+:root{
+    --bluee: #233ed9;
+    --blackk: #0d0d0d;
+    --whitee: #f2f2f2;
+}
+
+body{
+    background-color: var(--whitee);
+}
+
+header {
+  background-color: var(--bluee);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  height: 100px; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 150px; 
+  height: auto;
+  display: block;
+}
+
+nav ul.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 20px;
+  padding: 0;
+}
+
+nav ul.nav-links li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--whitee);
+  font-weight: bold;
+  font-size: 17px;
+  padding-bottom: 4px;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--whitee);
+  transition: width 0.6s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem; 
+  padding: 2.5rem;
+  margin-bottom: -30px;
+}
+
+.card-main {
+  flex: 1; 
+}
+
+.main h3{
+    font-size: 4rem;
+    color: var(--bluee);
+}
+
+.main span{
+    font-style: italic;
+    font-size: 16px;
+}
+
+.main p{
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.btn-main button{
+    border: 2px solid var(--bluee);
+    margin-top: 20px;
+    border-radius: 50px;
+    width: 180px;
+    height: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn-main .btn-fala{
+    background-color: var(--bluee);
+    color: var(--whitee);
+}
+
+.btn-main .btn-service{
+    color: var(--bluee);
+}
+
+.img-credit {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.img-credit img {
+  max-width: 60%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .btn-main button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .img-credit {
+        margin-top: 20px;
+    }
+}
